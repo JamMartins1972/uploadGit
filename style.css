@@ -1,3 +1,4 @@
+
 .nav-link{
     color: white !important;
     font-size: 1rem !important;
@@ -6,4 +7,9 @@
 
 .background{
     color:blue !important;
+}
+
+.offensive-tittle{
+    color: brown !important;
+    background-color: black !important;
 }
