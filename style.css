@@ -1,19 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
-.offensive-tittle{
-    color: white !important;
-    background-color: white !important;
+body{
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif !important;
 }
+h1 h2 h3 h4 h5 h6{
+     font-weight: 700 !important;
+}
+
+a{
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.btn{
+    padding: 10px 22px;
+}
+
+
 .nav-link{
-    color: white !important;
-    font-size: 1rem !important;
-    font-weight: bold !important ;
+    color: black !important;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.nav-link:hover{
+    color: orangered !important;
+    font-weight: bold;
+    font-weight: 35px;
+
 }
 
-.background{
-    color:blue !important;
+.navbar-brand{
+    color: black !important ;
+    font-size: 30px;
+    font-style:'Roboto', sans-serif !important;
+    font-weight: bold;
+}
+.navbar-brand span{
+    color: orange !important;
+   
 }
 
-.offensive-tittle{
-    color: brown !important;
-    background-color: black !important;
+/* Hero*/
+
+.hero-section{
+    min-height: 100vh ;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./image/dakadaZugacoin.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-section h1{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.hero-section .btn-main{
+    width:230px ;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    border: none;
+
+}
+.hero-section .btn-main:hover{
+    width:230px ;
+    background-color:transparent;
+    color: orangered;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    border: 3px solid orangered;
+
+}
+
+/* About-Us styling */
+.About-us{
+    min-height: 70vh;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.note{
+    background-color: rgb(219, 195, 163);
 }
