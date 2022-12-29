@@ -112,6 +112,21 @@ a{
     
     
 }
-.pix{
-    border-radius: 100px;
+
+.gallery{
+   
+    
+    background: linear-gradient(rgba(0,0,50, 0.9),rgba(0,0,50, 0.9)) url('./image/familyPicture.jpg');
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+.item{
+    transition: 5s ease-in-out;
+}
+.item:hover{
+    filter: brightness(80%);
 }
