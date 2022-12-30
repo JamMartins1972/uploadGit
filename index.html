@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" ></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,80 +17,75 @@
 
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg  bg-light Navbar-light">
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!--nabar-->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Jam <span>Tech</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand "  href="#">Jam <span>TECH</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent me-auto">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse " id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active"  href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About-us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">HRH Thomas Tyover Jam Gbinde family photo album</a></li>
-              <li><a class="dropdown-item" href="#">His profession</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">His Marriage Life</a></li>
-            </ul>
-          </li>
+            <a class="nav-link " href="#services" data-aos="zoom-in" >Services</a>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link " href="#footer">Footer</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+ 
 
   <!--hero section-->
-  <section class="hero-section">
-    <div class="container">
+  <section class="hero-section" id="home">
+    <div class="container" data-aos="fade-right" data-aos-duration="1500">
       <div class="row">
         <div col-12>
-          <h1 class="text-white display-3 mb-5"> JAM GBINDE FAMILY WEBPAGE. <br> The home of Peace and unity.</h1>
-          <a href="#" class="btn btn-main">CONTACT-US</a>
+          <h1 class="text-white display-3 mb-5" > JAM GBINDE FAMILY WEBPAGE. <br> The home of Peace and unity.</h1>
+          <a href="#" class="btn btn-main" data-aos="zoom-in-down" data-aos-duration="2500">CONTACT-US</a>
         </div>
       </div>
     </div>
   </section>
 
   <!--About Us-->
-  <section class="About-us">
+  <section class="About-us" id="about" data-aos="zoom-in-down" data-aos-duration="1500">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="display-9 mt-2 mb-4 mt-4"><strong>About Us</strong> </h1>
+          <h1 class="display-9 mt-2 mb-4 mt-4"data-aos="zoom-in-left" data-aos-duration="1500"><strong>About Us</strong> </h1>
           <div class="divider"></div>
         </div>
-        <div class="col-md-6 mt-4">
+        <div class="col-md-6 mt-4" data-aos="flip-right"data-aos-duration="1000">
           <img src="./image/JamGbinde1.jpg" class="img-fluid" alt="HRH. Jam Gbinde">
         </div>
         <div class="col-md-6 note">
-          <h5><strong>Family brief history</strong></h5>
+          <h5><strong  data-aos="zoom-out-up" data-aos-duration="2500">Family brief history</strong></h5>
           <div class="divider text-center"> </div>
-          <p>The Jam Gbinde family hails from Mbaasuku, Mbatsen, Gaav, Konshisha Local Government Area of Benue State,
+          <p data-aos="fade-down"data-aos-duration="1500" >The Jam Gbinde family hails from Mbaasuku, Mbatsen, Gaav, Konshisha Local Government Area of Benue State,
             Nigeria, family is headed by HRH. Thomas Tyover Jam Gbinde who is the traditonal ruler from Konshisha Local
             Government, he is a second class chief from Tiv land</p>
           <p>Tyover Jam Gbinde was born by mother, Mama Ashieahen alongside two (2) junior brother, <br>
             They are:</p>
-          <ul>
+          <ul data-aos="fade-zoom-in"data-aos-duration="2000">
             <li>HRH. Thomas Tyover Jam Gbinde</li>
             <li>Mr. Ijirtamen Jam Gbinde</li>
             <li>Mr. Joseph Jam Gbinde</li>
           </ul>
           <p>They all grow up to reproduce families as follows:</p>
-          <h5><strong>Wives of HRH.Tyover Jam Gbinde</strong> </h5>
-          <ol>
+          <h5><strong data-aos="flip-left"data-aos-duration="2000" >Wives of HRH.Tyover Jam Gbinde</strong> </h5>
+          <ol  >
             <li>Mama. Victoria Jam </li>
             <li>Late.Mama.Lydia Jam</li>
             <li>Late.Mama. Iyuhwengi Jam</li>
@@ -115,12 +110,12 @@
   </section>
 
   <!--Service-->
-  <section class="services mt-5">
-    <div class="container">
+  <section class="services mt-5 " id="services">
+    <div class="container"  data-aos="zoom-out-up" data-aos-duration="2000">
       <div class="row">
         <div class="col-12 text-center ">
-          <h1 class="display-5">Services</h1>
-          <div class="divider"></div>
+          <h1 class=" service_head display-5"></h1>
+          <div class="divider"data-aos-duration="1500"data-aos="flip-left" >Services</div>
         </div>
       </div>
       <div class="row text-center gy-5 ">
@@ -129,8 +124,7 @@
             <i class="fas fa-user"></i>
             <div class="card-body">
               <h5 class="card-title mt-2">Software developer</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card'scontent.</p>
+              <p class="card-text">Text reserv area for future development.</p>
             </div>
           </div>
         </div>
@@ -139,8 +133,7 @@
             <i class="fas fa-envelope"></i>
             <div class="card-body">
               <h5 class="card-title">World press</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card'scontent.</p>
+              <p class="card-text">Text reserv area for future development</p>
             </div>
           </div>
         </div>
@@ -149,8 +142,7 @@
             <i class="fas fa-home"></i>
             <div class="card-body">
               <h5 class="card-title">Graphic Designer</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card'scontent.</p>
+              <p class="card-text">Text reserv area for future development</p>
             </div>
           </div>
         </div>
@@ -159,8 +151,7 @@
             <i class="fas fa-phone"></i>
             <div class="card-body">
               <h5 class="card-title">Mobile Application</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card'scontent.</p>
+              <p class="card-text">Text reserv area for future development</p>
             </div>
           </div>
         </div>
@@ -169,8 +160,7 @@
             <i class="fas fa-star"></i>
             <div class="card-body">
               <h5 class="card-title">freelancer</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card'scontent.</p>
+              <p class="card-text">Text reserv area for future development</p>
             </div>
           </div>
         </div>
@@ -179,8 +169,7 @@
             <i class="fas fa-pen"></i>
             <div class="card-body">
               <h5 class="card-title">Data Analyst</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card'scontent.</p>
+              <p class="card-text">Text reserv area for future development</p>
             </div>
           </div>
         </div>
@@ -189,12 +178,23 @@
   </section>
 
   <!--ThomasJam Gbinde Children-->
-  <section class="gallery mt-5">
+  <section class="gallery mt-5" id="gallery"data-aos="fade-up" data-aos-duration="1500">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="display-5 ">Children Gallery</h1>
+          <h1 class="display-5 " data-aos="fade-up" data-aos-duration="2000">Children Gallery</h1>
           <div class="divider"></div>
+        </div>
+        <div class=" item col-md-4 col-sm-6 mb-3">
+          <div class="card text-center">
+            <a href="./image/familyPicture.jpg" class="fancybox" data-fancybox=""='gallery1'>
+              <img src="./image/familyPicture.jpg" height="350vh">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Family Picture</h5>
+              <p class="card-text">Baba and Children.</p>
+            </div>
+          </div>
         </div>
         <div class=" item col-md-4 col-sm-6 mb-3">
           <div class="card text-center">
@@ -619,7 +619,34 @@
     </div>
   </section>
 
+  <!--footer-->
+  <section class="footer mt-5" id="footer" data-aos="fade-left" data-aos-duration="2000">
+    <div class="container" >
+      <div class="row">
+        <div class="first_column col-12 text-center ">
+          <h4>Jam Gbinde family website</h4>
+          <h5 class="font">Designed by 07012168326</h5>
+          <div class=" social  col-12 ">
+            <a href="">
+              <h5 class="media">Media</h5>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+          <div class="col-12 copyright text-center">
+            <h5>&copy; All rights reserved </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="./bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./aos.js"></script>
 </body>
 
 </html>
